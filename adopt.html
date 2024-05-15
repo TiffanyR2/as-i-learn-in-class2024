@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Wale</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./javascript/wale.js"></script>
+</head>
+<body>
+    <nav>
+    <img src="./images/clip.png" alt="logo" id="logos">
+        <ul>
+            <li><a href="index.html"></P>Photos</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="adopt.html">Adopt</a></li>
+        </ul>
+    </nav>
+    <article>
+        <select id="wales"></select>
+    </article>
+    <aside>
+        <div id="output">?</div>
+        <img id="photo">
+        <div id="detail"></div>
+    </aside>
+</body>
+<script>
+//kindOf.forEach(w => console.log(w.name, w.type))
+kindOf.forEach(w =>{
+    const opt = document.createElement("option")
+    opt.classList.add("card")
+    opt.innerText = w.name
+    wales.appendChild(opt)
+} )
+wales.addEventListener("change", e => {
+    const wale = kindOf.find(w => w.name === wales.value);
+    output.innerText = wale.type;
+    photo.src = wale.image;
+    detail.innerHTML = ""
+    detail.innerHTML = wale.detail.map(s => `<li>${s}</li>`).join("")
+}) 
+
+
+
+
+</script>
+</html>

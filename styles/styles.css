@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-image: url(../images/wale.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+    background-color: black;
+    box-shadow: 3px 3px 5px blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: x-large;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+nav a:hover{
+    background-color: lightskyblue;
+}
+aside{
+    float: right;
+}
+#photo{
+    /* margin-left: 125vh; */
+    border-color: lightskyblue;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px 5px black;
+}
+#bio{
+    background-color: aliceblue;
+    box-shadow: 2px 2px 3px blue;
+    width: 300px;
+}
+#logos{
+    height: 3rem;
+  align-items:center
+}
+#talk{
+    font-size:xx-large;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#bios{
+    background-color: aliceblue;
+    box-shadow: 2px 2px 3px blue;
+    width: 300px;
+    float: right;
+   
+}
+select, option{
+    font-size: 2rem;
+}
+article{
+    text-align: center;
+}
+aside{
+    font-size: x-large;
+    color: darkblue;
+}
+#white{
+    background-image: none;
+}
