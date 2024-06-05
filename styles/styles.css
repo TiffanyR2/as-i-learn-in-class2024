@@ -96,6 +96,5 @@ aside{
 footer{
     background-color: black;
     border: 2px 2px 3px solid black;
-    display: flex;
-    align-items: center;
+background-size: contain;
 }
